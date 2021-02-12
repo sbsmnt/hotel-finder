@@ -1,0 +1,126 @@
+@import './_variables';
+
+.details {
+	margin-bottom: 0;
+	max-width: 90%;
+	min-height: 85vh;
+	margin: auto;
+	@include tablet {
+		max-width: 100%;
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 3rem;
+		@include mobile {
+			flex-direction: column;
+			align-items: flex-end;
+		}
+	}
+
+	&__title {
+		margin-bottom: 1rem;
+		max-width: 60%;
+		@include tablet {
+			max-width: 100%;
+		}
+	}
+
+	&__name {
+		font-size: 3rem;
+		@include mobile {
+			font-size: 2.2rem;
+		}
+	}
+
+	&__star-icon {
+		width: 25px;
+	}
+
+	&__address {
+		font-size: 1.1rem;
+		color: $tui-dark-100;
+		margin-top: 1rem;
+	}
+
+	&__text {
+		max-width: 90%;
+		font-size: 1.1rem;
+		line-height: 1.4;
+		margin-bottom: 1.5rem;
+	}
+
+	&__value {
+		font-size: 2.2rem;
+		font-weight: 700;
+		text-align: center;
+		color: $tui-dark-100;
+	}
+
+	&__book-btn {
+		padding: 1rem 1.5rem;
+		border-radius: 0.2rem;
+		font-weight: 700;
+		letter-spacing: 1px;
+		margin-top: 0.5rem;
+	}
+
+	&__offer {
+		display: flex;
+		margin-bottom: 4rem;
+		justify-content: space-between;
+		@include tablet {
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__media {
+		margin: auto;
+		position: relative;
+	}
+
+
+	&__desc {
+		margin: 1rem 0;
+		padding-right: 3rem;
+		max-width: 70%;
+		@include tablet{
+			max-width: 100%;
+		}
+	}
+
+	&__room-items {
+		margin: 2rem 0;
+	}
+
+	&__beds,
+	&__guests {
+		display: inline-flex;
+		margin-right: 1rem;
+		align-items: center;
+
+		& span {
+			font-size: 1.2rem;
+			margin: 0 0.5rem;
+			font-weight: 600;
+		}
+	}
+
+	&__amenities {
+		margin-top: 3rem;
+	}
+
+	&__am-icon{	
+		margin-right: 1rem;
+		display: inline-flex;
+		align-items: center;
+		font-size: 1.1em;
+		text-transform: capitalize;
+		& span {
+			font-weight: 700;
+			margin-left: .5rem;
+		}
+	}
+}

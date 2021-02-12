@@ -1,0 +1,172 @@
+@import './variables';
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 80%;
+	height: 100%;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	background-color: $light-grey;
+}
+
+img {
+	max-width: 100%;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: .5rem 1rem;
+	border-radius: .2rem;
+	background-color: $off-white;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:hover{
+		background-color: $grey;
+	}
+}
+
+input {
+	font-size: 1.1rem;
+	color: $tui-grey-200;
+	padding: 0.4rem;
+	border: 1px solid $grey;
+	min-height: 1.5rem;
+	@include mobile {
+		border-radius: 5px;
+	}
+}
+
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='text'],
+input[type='tel'],
+input[type='url'],
+input[type='password'] {
+	appearance: none;
+	background-color: #fff;
+	height: 45px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+
+	&:focus {
+		outline: 0;
+	}
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+	display: inline;
+}
+
+select {
+	height: 38px;
+	padding: 6px 10px;
+	background-color: #fff;
+	border: 1px solid #d1d1d1;
+	border-radius: 0.2rem;
+	box-shadow: none;
+	&:focus {
+		border: 1px solid $tui-blue-800;
+		outline: 0;
+	}
+}
+
+label,
+legend {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+a {
+	color: $tui-blue-800;
+	text-decoration: none;
+	&:hover {
+		color: $tui-blue-1600;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $tui-dark-100;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-weight: 400;
+	word-wrap: break-word;
+	letter-spacing: -0.1rem;
+}
+
+h1 {
+	font-size: 4.5rem;
+	line-height: 1.2;
+	@include mobile {
+		font-size: 4rem;
+	}
+}
+
+h2 {
+	font-size: 4.2rem;
+	line-height: 1.25;
+	@include mobile {
+		font-size: 3.6rem;
+	}
+}
+
+h3 {
+	font-size: 2.6rem;
+	line-height: 1.3;
+	@include mobile {
+		font-size: 3rem;
+	}
+}
+
+h4 {
+	font-size: 2rem;
+	line-height: 1.35;
+	@include mobile {
+		font-size: 2.4rem;
+	}
+}
+
+h5 {
+	font-size: 1.4rem;
+	line-height: 1.5;
+	@include mobile {
+		font-size: 1.8rem;
+	}
+}
+
+h6 {
+	font-size: 1.2rem;
+	line-height: 1.6;
+	@include mobile {
+		font-size: 1.5rem;
+	}
+}
+
+section {
+	margin: 3rem 0;
+	padding: 1rem 3rem;
+	position: relative;
+}
+
+:focus {
+	outline: none;
+}

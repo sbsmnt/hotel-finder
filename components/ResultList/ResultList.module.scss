@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+
+.list-options {
+	display: flex;
+	align-items: center;
+
+	&__list {
+		&:hover {
+			border: 1px solid $tui-blue-800;
+		}
+	}
+
+	&__order {
+		background: #fff;
+		border: 1px solid $off-white;
+		border-radius: 0.2rem;
+		padding: 0.2rem 0.5rem;
+		margin: 0 1rem;
+		display: flex;
+		align-items: center;
+		&:hover {
+			background: #fff;
+			border: 1px solid $tui-blue-800;
+		}
+	}
+}
+
+.order-icon {
+	width: 30px;
+}
+
+.result-list{
+	margin-top: 1rem;
+
+	&__no-results{
+		text-align: center;
+	}
+
+	&__no-search{
+		text-align: center;
+		min-height: 60vh;
+	}
+}

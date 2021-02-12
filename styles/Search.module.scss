@@ -1,0 +1,11 @@
+@import './_variables.scss';
+
+.search-results {
+	background: $grad-light_sky;
+	margin: 0;
+	z-index: 10;
+}
+
+.result-list {
+	margin-top: 1rem;
+}

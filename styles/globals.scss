@@ -1,0 +1,106 @@
+@import './variables';
+@import './base.scss';
+@import 'react-nice-dates/src/style.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+
+.btn--red {
+	color: #fff;
+	background: $tui-red-100;
+	&:hover {
+		background: $tui-red-200;
+	}
+}
+
+.card {
+	background: #fff;
+	padding: 2rem;
+	border: 1px solid $off-white;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.flex-grid {
+	display: flex;
+
+	& > * {
+		flex: 1;
+		&.flex-grid__col {
+			flex-grow: 4;
+			margin-left: 2%;
+			&--fixed-width {
+				flex: 0 0 200px;
+			}
+			&--lg {
+				flex-grow: 8;
+			}
+		}
+		&:first-child {
+			margin-left: 0rem;
+		}
+		&:last-child {
+			margin-right: 0rem;
+		}
+	}
+	&--center {
+		align-content: center;
+		justify-content: center;
+	}
+
+	@include mobile {
+		&--md {
+			display: block;
+
+			& > * {
+				padding-left: 0;
+				padding-right: 0;
+				&.flex-grid__col {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+	@include small-desktop {
+		&--lg {
+			display: block;
+
+			& > * {
+				padding-left: 0;
+				padding-right: 0;
+				&.flex-grid__col {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+
+// Date Picker overrides
+.nice-dates {
+	&-navigation {
+		color: $tui-dark-100;
+	}
+	&-day {
+		font-size: $nice-dates-font-size-big;
+	}
+	&-day:before {
+		background-color: $tui-blue-1600;
+	}
+	&-day:after {
+		border: 2px solid $tui-blue-1600;
+	}
+
+	&-popover {
+		border-radius: 5px;
+		padding: 1rem;
+		box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+		margin: 8px 0;
+		max-width: 600px;
+		width: 140%;
+		@include tablet {
+			width: 100%;
+		}
+	}
+}

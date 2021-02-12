@@ -1,0 +1,94 @@
+@import '../../styles/variables';
+
+.result-card {
+	display: flex;
+	background: #fff;
+	padding: 2rem;
+	border: 1px solid $off-white;
+	border-radius: 5px;
+	margin: 1.5rem 0;
+	cursor: pointer;
+	transition: all 0.3s ease;
+
+	&:hover {
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	}
+
+	&__details {
+		flex-grow: 1;
+		margin-right: 2.5rem;
+	}
+
+	&__body {
+		padding: 1rem 0;
+	}
+
+	&__room-type {
+		font-size: 1.1rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	&__guests {
+		display: inline;
+	}
+
+	&__guests-icon {
+		margin: 0 0.5rem;
+		position: relative;
+		top: 5px;
+	}
+
+	&__desc {
+		margin: 1.2rem 0;
+		max-width: 80%;
+	}
+
+	&__more {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__btn {
+		padding: 1rem 1.5rem;
+		color: #fff;
+		font-size: 1.2rem;
+		border-radius: 0.2rem;
+	}
+
+	&__media {
+		display: flex;
+		align-items: center;
+		min-width: 200px;
+	}
+
+	&__media-wrap {
+		position: relative;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	&__image-wrap {
+		max-width: 200px;
+		height: 200px;
+	}
+
+	&__image {
+		object-fit: cover;
+		height: inherit;
+	}
+
+	&__price {
+		position: absolute;
+		width: 100%;
+		bottom: 0px;
+		right: 0;
+		padding: 0.5rem 1rem;
+		font-size: 2.5rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: right;
+		color: $tui-dark-100;
+		background: rgba(255, 255, 255, 0.8);
+	}
+}

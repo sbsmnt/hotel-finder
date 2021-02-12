@@ -1,0 +1,54 @@
+// Colors
+$light-grey: #f5f5f5;
+$grey: #ccc;
+$off-white: #ededed;
+
+$tui-dark-100: #092a5e;
+$tui-dark-50: #1e4785;
+$tui-blue-1600: #0076b5;
+$tui-blue-800: #048dcc;
+$tui-grey-200: #3f3f3f;
+$tui-grey-100: #737373;
+$tui-red-100: #d40e14;
+$tui-red-200: #b50006;
+
+// Gradients
+$grad-light_sky: linear-gradient(
+	rgba(47, 178, 235, 1) 0%,
+	rgba(226, 243, 254, 1) 100%
+);
+$grad-heavy_sky: linear-gradient(
+	rgba(30, 71, 133, 1) 0%,
+	rgba(47, 178, 235, 1) 100%
+);
+
+
+// Media Queries
+$desktop-width: 1300px;
+$small-desktop-width: 959px;
+$tablet-width: 768px;
+$mobile-width: 549px;
+
+@mixin desktop {
+	@media (max-width: $desktop-width) {
+		@content;
+	}
+}
+
+@mixin small-desktop {
+	@media (max-width: $small-desktop-width) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (max-width: $tablet-width) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media (max-width: $mobile-width) {
+		@content;
+	}
+}

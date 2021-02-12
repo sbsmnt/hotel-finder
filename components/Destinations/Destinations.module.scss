@@ -1,0 +1,66 @@
+@import '../../styles/variables';
+
+.destinations {
+	&__list {
+		display: flex;
+		justify-content: center;
+		@include small-desktop {
+			flex-wrap: wrap;
+		}
+		@include mobile{
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__item {
+		@include small-desktop {
+			flex: 0 0 50%;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 2.5rem;
+	}
+}
+
+.country {
+	&__card {
+		padding: 1rem;
+		margin: 0 1.5rem;
+		@include small-desktop {
+			margin: 1.5rem;
+		}
+
+		&:hover {
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+		}
+	}
+}
+
+.card {
+	&__img {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 1rem;
+		&--cover {
+			object-fit: cover;
+		}
+	}
+	&__title {
+		margin-bottom: 1rem;
+	}
+	&__link{
+		font-size: 1.7rem;
+		cursor: pointer;
+		&:hover{
+			color: $tui-blue-1600;
+		}
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
